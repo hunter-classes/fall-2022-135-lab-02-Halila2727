@@ -9,6 +9,13 @@
 
 #include <iostream>
 
+//The reason this file does not output the fibonacci sequence correctly once
+//the numbers approach 2 billions is because the maximum value an int type
+//(our fibonacci array is an int array) can hold is 2,147,483,647 and once
+//this max value is passed, C++ reverts the value to the minimum value (-2,147,483,648)
+//and starts increasing once again. Since, the program can't display anything
+//higher than the max value above, our fibonacci values ultimately diverge
+//from the actual fibonacci sequence and includes negative values :(
 
 int fib_num_generate(int before, int before2)
 {
