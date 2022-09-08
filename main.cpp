@@ -11,20 +11,11 @@
 
 int main()
 {
-	std::cout << "Testing... Printing all integers between -5 and 10!" << std::endl;
-	print_interval(-5, 10);
-
-	int begin=0;
-	int end=0;
-	
-	std::cout << std::endl;
-	std::cout << "\nPlease enter L: ";
-	std::cin >> begin;
-	std::cout << "Please enter U: ";
-	std::cin >> end;
+	std::cout << "\nPlease enter L: -5";
+	std::cout << "\nPlease enter U: 10";
 
 	std::cout << "\n\n";
-	print_interval(begin, end);
+	print_interval(-5, 10);
 	std::cout << std::endl;
 	
 	return 0;
